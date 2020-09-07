@@ -1,0 +1,20 @@
+Package: a4adiags
+Title: Diagnostic Toolbox for a4a
+Version: 1.0.1
+Authors@R: 
+    c(person(given = "Henning",
+           family = "Winker",
+           role = c("aut", "cre"),
+           email = "henning.winker@ec.europa.com"))
+Maintainer: Henning Winker <Henning.Winker@gmail.com>
+Description: Diagnostic Toolbox for a4a
+Depends:
+    R (>= 3.5)
+Imports:
+      snpar,
+      reshape2,
+      mvtnorm
+License: EUPL
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.0
