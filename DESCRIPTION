@@ -9,7 +9,9 @@ Authors@R:
 Maintainer: Henning Winker <Henning.Winker@gmail.com>
 Description: Diagnostic Toolbox for a4a
 Depends:
-    R (>= 3.5)
+    R (>= 3.5),
+    FLCore (>= 2.6.4),
+    FLa4a
 Imports:
       snpar,
       reshape2,

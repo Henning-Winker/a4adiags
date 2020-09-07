@@ -113,12 +113,12 @@ a4aPlotRunstest <- function(obs,hat,mixing="less",subplots=c("combined.n","age",
     datatypes= c("","","","")
     ylabel = datatypes[which(c("combined.n","age","bio")%in%subplots)]
     if(verbose) cat('\n',"Running Runs Test Diagnosics for",ylabel,'\n')
-      out = as.data.frame(obs) 
+      out = obs 
       if("slot"%in%names(out)){
       out = out[out$slot=="index",]
       }
       Obs = out$data
-      fitted = as.data.frame(hat) 
+      fitted = hat 
       Exp = fitted$data
       Fleet_name = paste0("Age-",fitted$age)
       Fleet = fitted$age
@@ -202,7 +202,7 @@ a4aPlotRunstest <- function(obs,hat,mixing="less",subplots=c("combined.n","age",
       # get quantities for plot
       yr <- resid$Yr
       ti <- resid$Time  
-      ylab= paste(ylabel,"residuals")
+      ylab= paste(ylabel,"Residuals")
       
       ### make plot of index fits
       
