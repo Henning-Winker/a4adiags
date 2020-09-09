@@ -273,8 +273,7 @@ a4aPlotRunstest <- function(obs,hat,mixing="less",subplots=c("combined.n","age",
         if(!add)(par)
         get_runs = plot_runs(resid)    
         runs = rbind(runs,c(get_runs$p.runs,get_runs$sig3lim))
-        # End of Fleet Loop
-        } else {
+         } else {
         runs = rbind(runs,c(NA,NA,NA))
         }
     }   
